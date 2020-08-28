@@ -21,4 +21,8 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 6 Parámetros. Paso de parámetros entre vistas para detalles. Breadcrums.
 
-* 7 CRUD Bases de datos no relacionales. Firestone Google. Cloud computing. CRUD.
+* 7 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
+
+* 8 Login y registro de usuarios.
+
+* 9 Integración.
