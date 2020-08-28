@@ -17,6 +17,6 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 4 Pipes. Visualización de datos. A partir de tablas.
 
-* 5 Integración Pipe y servicios para realizar búsqueda dinámica de un modelo de datos.
+* 5 Búsquedas y pipes. servicios para realizar búsqueda dinámica de un modelo de datos.
 
 * 6 Parámetros. Paso de parámetros entre vistas para detalles. Breadcrums.
