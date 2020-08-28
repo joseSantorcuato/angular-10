@@ -9,14 +9,14 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 ### Clase a clase
 
-* 1. Boostrap y Routing. Ejemplo que permite integrar el framework Bootstrap y definir el sistema de rutas, navegación entre páginas. Creación de componentes únicos y compartidos. Creación de vista y barra de navegación.
+* 1 Boostrap y Routing. Ejemplo que permite integrar el framework Bootstrap y definir el sistema de rutas, navegación entre páginas. Creación de componentes únicos y compartidos. Creación de vista y barra de navegación.
 
-* 2. Integración de imágenes, media en general. Carpeta /assets, imágenes, favicon, brand. Integración de medios en 
+* 2 Integración de imágenes, media en general. Carpeta /assets, imágenes, favicon, brand. Integración de medios en
 
-* 3. Servicios. Creación de modelo de datos, objetos. directiva ngFor. Integración con objetos: cards.
+* 3 Servicios. Creación de modelo de datos, objetos. directiva ngFor. Integración con objetos: cards.
 
-* 4. Pipes. Visualización de datos. A partir de tablas.
+* 4 Pipes. Visualización de datos. A partir de tablas.
 
-* 5. Integración Pipe y servicios para realizar búsqueda dinámica de un modelo de datos.
+* 5 Integración Pipe y servicios para realizar búsqueda dinámica de un modelo de datos.
 
-* 6. Parámetros. Paso de parámetros entre vistas para detalles. Breadcrums.
+* 6 Parámetros. Paso de parámetros entre vistas para detalles. Breadcrums.
