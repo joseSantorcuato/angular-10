@@ -13,7 +13,7 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 2 Integración de imágenes, media en general. Carpeta /assets, imágenes, favicon, brand. Integración de medios en
 
-* 3 Servicios. Creación de modelo de datos, objetos. directiva ngFor. Integración con objetos: cards.
+* 3 Servicios. Creación de modelo de datos, objetos. directiva ngFor. Integración con componentes: cards.
 
 * 4 Pipes. Visualización de datos. A partir de tablas.
 
