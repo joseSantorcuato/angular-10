@@ -23,6 +23,6 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 7 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
 
-* 8 Login y registro de usuarios.
+* 8 Login y registro de usuarios. Zona privada. 
 
 * 9 Integración.
