@@ -1,0 +1,22 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a [routerLink]="['/catalogo']">Catálogo</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Detalle</li>
+  </ol>
+</nav>
+<div class="container">
+<p>  El parámetro recibido es {{id}}, con este número ya podría traer los detalles del servicio. Tendría que importarlo
+, como lo hacemos en catálogo, podría ser el mismo servicio o crear otro, a lo mejor con más datos.</p>
+
+
+
+<div class= "card" >
+  <br>
+  <img [src]="img" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{nom}}</h5>
+    <p class="card-text">{{fecha}}</p>
+    <a href="#" class="btn btn-primary">Ver detalle</a>
+  </div>
+</div>
+</div>
