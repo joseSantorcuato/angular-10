@@ -15,7 +15,7 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 3 Servicios. Creación de modelo de datos, objetos. directiva ngFor. Integración con componentes: cards.
 
-* 4 Pipes. Visualización de datos. A partir de tablas.
+* 4 Pipes. Presentación de datos. Datatbles, tablas.
 
 * 5 Búsquedas y pipes. servicios para realizar búsqueda dinámica de un modelo de datos.
 
