@@ -19,10 +19,14 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 5 Búsquedas y pipes. servicios para realizar búsqueda dinámica de un modelo de datos.
 
-* 6 Parámetros. Paso de parámetros entre vistas para detalles. Breadcrums.
+* 6 Parámetros. Paso de parámetros entre vistas para detalles. Breadcrums. JSON.
 
-* 7 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
+* 7 Parámetros 2. Utilización de decorador @input. Data binding entre componente y HTML. Función find() para filtrar resultados de array.
 
-* 8 Login y registro de usuarios. Zona privada. 
+* 8 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
 
-* 9 Integración.
+* 9 Login y registro de usuarios. Zona privada.
+
+* 10 Nodemail. Envío de correos de confirmación proceso.
+
+* 9 Taller de Integración.
