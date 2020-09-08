@@ -15,7 +15,7 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 3 Servicios. Creación de modelo de datos, objetos. directiva ngFor. Integración con componentes: cards.
 
-* 4 Pipes. Presentación de datos. Datatbles, tablas.
+* 4 Pipes. Presentación de datos. Datatables, tablas.
 
 * 5 Búsquedas y pipes. servicios para realizar búsqueda dinámica de un modelo de datos.
 
@@ -23,9 +23,11 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 7 Parámetros 2. Utilización de decorador @input. Data binding entre componente y HTML. Función find() para filtrar resultados de array.
 
-* 8 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
+* 8 Detalles, creación de API, utilización de rutas con parámetros. Detalle de productos.
 
-* 9 Login y registro de usuarios. Zona privada.
+* 9 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
+
+* 10 Login y registro de usuarios. Zona privada.
 
 * 10 Nodemail. Envío de correos de confirmación proceso.
 
