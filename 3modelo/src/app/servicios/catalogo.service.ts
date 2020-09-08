@@ -8,6 +8,7 @@ export class CatalogoService {
   public modelos:any[] = [
 
 {
+id: "1",
 nombre: "Escarabajo",
 ano: "1945",
 imagen: "assets/imagenes/escarabajo.jpg",
@@ -15,6 +16,7 @@ texto: "El Volkswagen (comercializado por la marca como Käfer, Beetle, Escaraba
 },
 
 {
+id: "2",
 nombre: "Combi",
 ano: "1945",
 imagen: "assets/imagenes/combi.jpg",
@@ -22,6 +24,7 @@ texto: "Al finalizar la Segunda Guerra Mundial, la fábrica Volkswagen de Wolfsb
 },
 
 {
+id: "3",
 nombre: "Brasilia",
 ano: "1945",
 imagen: "assets/imagenes/safari.jpg",
