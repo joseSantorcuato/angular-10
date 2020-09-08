@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogoService } from '../../servicios/catalogo.service';
-import { FilterPipe } from './filter.pipe';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+
 
 
 @Component({
