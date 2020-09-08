@@ -29,6 +29,6 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 10 Login y registro de usuarios. Zona privada.
 
-* 10 Nodemail. Envío de correos de confirmación proceso.
+* 11 Nodemail. Envío de correos de confirmación proceso.
 
-* 9 Taller de Integración.
+* 12 Taller de Integración.
