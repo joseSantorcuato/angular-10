@@ -11,16 +11,31 @@
         <a class="nav-link" href="#">Carro de compras</a>
       </li>
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Mi cuenta
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Mis ordenes</a>
-          <a class="dropdown-item" href="#">Login</a>
 
-        </div>
-      </li>
+
+
+        <ng-template #anonymousUser>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login">Inicio de sesión</a>
+            </li>
+        </ng-template>
+
+        <li ngbDropdown *ngIf="appUser; else anonymousUser" class="nav-item dropdown">
+            <a ngbDropdownToggle class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ appUser.name }}
+            </a>
+            <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" routerLink="/my/orders">Mis ordenes</a>
+                <ng-container *ngIf="appUser.isAdmin">
+                    <a class="dropdown-item" routerLink="/admin/orders">Gestionar ordenes</a>
+                    <a class="dropdown-item" routerLink="/admin//products">Gestionar productos</a>
+                </ng-container>
+                <a class="dropdown-item" (click)="logout()">Cerrar sesión</a>
+            </div>
+        </li>
+
+
+
     </ul>
   </div>
 </nav>

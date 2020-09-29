@@ -1,1 +1,18 @@
-<p>product-filter works!</p>
+<div class="row">
+  <div class="col">
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Seleccione productos por categoría</button>
+
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" [class.active]="!category" routerLink="/">Todos los productos</a>
+
+
+        <button class="dropdown-item" *ngFor="let c of categories$ | async" routerLink="/"
+            [queryParams]="{ category: c.$key }"
+            class="list-group-item list-group-item-action"
+            [class.active]="category === c.$key">  {{ c.name }}</button>
+
+      </div>
+    </div>
+  </div>
+<br>
