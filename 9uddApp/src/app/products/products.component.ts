@@ -7,7 +7,6 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import 'rxjs/add/operator/switchMap';
 import { ShoppingCart } from '../models/shopping-cart';
 
-
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',

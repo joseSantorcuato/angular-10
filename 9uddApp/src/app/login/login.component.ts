@@ -1,6 +1,5 @@
 import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,16 +9,12 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent {
 
-  constructor(private authService: AuthService, private router: Router) {
+  constructor(private authService: AuthService) {
   }
 
   login() {
 
     this.authService.login();
-    this.router.navigate(['products']);
-
   }
-
-
 
 }
