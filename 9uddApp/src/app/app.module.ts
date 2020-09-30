@@ -1,21 +1,24 @@
 import { ShoppingCartService } from './shopping-cart.service';
 import { ProductService } from './product.service';
 import { CategoryService } from './category.service';
+
 import { AdminAuthGuardService } from './admin-auth-guard.service';
+
 import { UserService } from './user.service';
+
 import { AuthGuardService } from './auth-guard.service';
 import { AuthService } from './auth.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+
 import { RouterModule } from '@angular/router'
 import { CustomFormsModule } from "ng2-validation";
-import { DataTableModule } from "angular5-data-table";
 
 import { AppComponent } from './app.component';
-import { environment } from 'src/environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
@@ -34,6 +37,9 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
 import { OrderService } from './order.service';
 import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-cart-summary.component';
 import { ShippingFormComponent } from './shipping-form/shipping-form.component';
+
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -59,7 +65,6 @@ import { ShippingFormComponent } from './shipping-form/shipping-form.component';
     BrowserModule,
     FormsModule,
     CustomFormsModule,
-    DataTableModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
@@ -104,7 +109,8 @@ import { ShippingFormComponent } from './shipping-form/shipping-form.component';
     CategoryService,
     ProductService,
     ShoppingCartService,
-    OrderService
+    OrderService,
+
   ],
   bootstrap: [
     AppComponent]

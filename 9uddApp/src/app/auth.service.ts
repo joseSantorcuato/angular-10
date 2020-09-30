@@ -13,7 +13,7 @@ import 'rxjs/add/Observable/of';
 })
 export class AuthService {
 
-  //where $ is just an notation to describe developers that its an observable
+
   user$: Observable<firebase.User>;
 
   constructor(
@@ -26,16 +26,20 @@ export class AuthService {
    }
 
   login() {
-    // ActivatedRouteSnapshot used instead of ActivatedRoute because we dont have navigation on login page
-    //Problem: Need to store redirect url(check-out) when user is redirect to googleLogin
+
     let returnUrl = this.route.snapshot.queryParamMap.get('returnUrl') || '/';
     localStorage.setItem('returnUrl', returnUrl);
     this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
   }
 
+
+
+
   logout() {
     this.afAuth.auth.signOut();
   }
+
+
 
   get appUser$(): Observable<AppUser> {
     return this.user$
@@ -46,6 +50,6 @@ export class AuthService {
           return this.userService.get(user.uid)
         };
         return Observable.of(null);
-      }); // === user => {return this.userService.get(user.uid)}
+      });
   }
 }
