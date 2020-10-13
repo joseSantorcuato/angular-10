@@ -32,6 +32,10 @@ Para subir un documento a Github
 
 git status
 
+Conocer archivos modificados con tiempo
+
+git log --since={1.year.ago}// {3.weeks.ago}
+
 git add -A agrega todos los archivos
 
 Con un editor de texto tipo atom crea un archivo que se llame README
