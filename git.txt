@@ -1,0 +1,45 @@
+1. Crear cuenta en github.com
+2. Sincronizar PC con github
+3. sudo apt-get install git en linux
+
+4. ssh-keygen
+
+5.git config --global color.ui true
+6.git config --global user.name "tuUsuario"
+7.git config --global user.email "tuUsuario@xmail.com"
+8.ssh-keygen -t rsa -b 4096 -C "tuUsuario@xmail.com"
+
+9.cat ~/.ssh/id_rsa.pub
+
+Obtienes el Key SHH para establecer conexión con Github (Copia el resultado en las claves Ssh)
+
+Prueba que se establezca la conexión:
+
+ssh -T git@github.com
+
+Ahora clonamos el repositorio
+
+git clone https://github.com/tuUsuarioGit/repositorioAClonar
+
+
+cd repositorioAClonar
+
+Para subir un documento a Github
+
+git status
+
+git add -A agrega todos los archivos
+
+Con un editor de texto tipo atom crea un archivo que se llame README
+
+git add README
+
+git commit -m "Comandos básicos de Github 01/02/2017" //git commit -m "Comentario que describe al archivo, fecha de creación, modificación, etc"
+
+git push origin master
+
+Solicita nombre de usuario Github:
+
+Username for 'https://github.com':
+
+Password for 'https://tuUsuario@github.com':
