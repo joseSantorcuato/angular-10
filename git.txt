@@ -1,3 +1,7 @@
+
+MANUAL BÁSICO GITHUB
+José Santorcuato T
+
 1. Crear cuenta en github.com
 2. Sincronizar PC con github
 3. sudo apt-get install git en linux
