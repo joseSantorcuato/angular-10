@@ -27,6 +27,13 @@ export class AuthService {
 
     this.afAuth.auth.signInWithRedirect(new firebase.auth.GoogleAuthProvider());
   }
+  signInWithFacebook() {
+      return this.afAuth.auth.signInWithPopup(
+        new firebase.auth.FacebookAuthProvider()
+      )
+    }
+
+
 
   logout(){
     this.afAuth.auth.signOut();

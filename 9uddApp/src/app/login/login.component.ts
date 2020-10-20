@@ -1,5 +1,6 @@
 import { AuthService } from './../auth.service';
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
 
 
 
@@ -10,17 +11,22 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-  constructor(private authService: AuthService) {
+  constructor(private authService: AuthService, private router: Router) {
   }
 
-  loginfake() {
+  login() {
 
     this.authService.login();
   }
 
+  signInWithFacebook() {
+      this.authService.signInWithFacebook()
+      .then((res) => {
+          this.router.navigate(['products'])
+        })
+      .catch((err) => console.log(err));
 
-
-
+    }
 
 
 }

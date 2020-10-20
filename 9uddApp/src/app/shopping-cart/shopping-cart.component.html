@@ -1,1 +1,31 @@
-<p>shopping-cart works!</p>
+<br>
+
+<h1>Carro de compras</h1>
+<br>
+<div class="card" *ngIf="cart$ | async as cart" style="width: 100%;">
+  <div class="card-body">
+    <p>
+      Tienes {{ cart.totalItemsCount }} un producto en tu carro de compras.
+      <button *ngIf="cart.items.length" (click)="clearCart()" class=" btn btn-light btn-sm"><i class="fas fa-trash"></i>
+
+Limpiar carro</button>
+
+    </p>
+  </div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nº</th>
+      <th scope="col">Producto</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Sintetizador Arturia</td>
+      <td>1</td>
+      <td>$135.000</td>
+    </tr>

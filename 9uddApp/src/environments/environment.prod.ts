@@ -3,7 +3,7 @@ export const environment = {
   firebaseConfig: {
 
 
-        apiKey: "AIzaSyC_OHRzB2ekYFsPCwIR-17ysCw1Tg9GjcA",
+     apiKey: "AIzaSyC_OHRzB2ekYFsPCwIR-17ysCw1Tg9GjcA",
      authDomain: "claseseptiembre-74980.firebaseapp.com",
      databaseURL: "https://claseseptiembre-74980.firebaseio.com",
      projectId: "claseseptiembre-74980",

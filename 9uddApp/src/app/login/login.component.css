@@ -17,10 +17,20 @@ h3{
 
 }
 
-button{
+#google{
   margin-top: 50px;
   text-align: center;
-  background-color: red;
+  background-color: #ea4335;
+  border: 0;
+  padding: 6px 21px;
+
+
+}
+
+#fb{
+  margin-top: 50px;
+  text-align: center;
+  background-color: #1775e8;
   border: 0;
 
 
