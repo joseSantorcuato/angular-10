@@ -25,4 +25,4 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 8 Detalles, creación de API, utilización de rutas con parámetros. Detalle de productos.
 
-* 9 Proyecto de integración, inicio sesión Google, Facebook, Firebase. Carro de compras. WIP
+* 9 Proyecto de integración, inicio sesión Google, Facebook, base de datos NoSQL Firebase. Carro de compras. WIP
