@@ -25,10 +25,4 @@ Recomiendo descargar la carpeta y ejecutar los códigos.
 
 * 8 Detalles, creación de API, utilización de rutas con parámetros. Detalle de productos.
 
-* 9 CRUD Bases de datos no relacionales. Firebase/Firestone Google. Cloud computing. CRUD.
-
-* 10 Login y registro de usuarios. Zona privada.
-
-* 11 Nodemail. Envío de correos de confirmación proceso.
-
-* 12 Taller de Integración.
+* 9 Proyecto de integración, inicio sesión Google, Facebook, Firebase. Carro de compras. WIP
