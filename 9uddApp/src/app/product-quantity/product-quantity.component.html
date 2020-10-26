@@ -1,16 +1,10 @@
 
-<div class="row no-gutters">
-    <div class="col-2">
-        <button
-            (click)="removeFromCart()"
-            class="btn btn-secondary btn-block">-</button>
-    </div>
-    <div class="col text-center">
-      <!--  {{ shoppingCart.getQuantity(product) }} Mostaria en la card... carrito -->
-    </div>
-    <div class="col-2">
-        <button
-            (click)="addToCart()"
-            class="btn btn-secondary btn-block">+</button>
-    </div>
+
+
+<div class="def-number-input number-input safari_only">
+  <button (click)="removeFromCart()" class="minus"></button>
+  <div class="col text-center">
+     {{ shoppingCart.getQuantity(product) }}
+  </div>
+  <button   (click)="addToCart()" class="plus"></button>
 </div>
