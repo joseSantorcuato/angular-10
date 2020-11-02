@@ -1,1 +1,36 @@
-<p>shipping-form works!</p>
+<form #f="ngForm">
+  <br>
+    <div class="form-group">
+      <label for="">Nombre Completo</label>
+      <input #name="ngModel" name="name" [(ngModel)]="shipping.name" type="text" placeholder="Ej: Mario Morales Mora" class="form-control" required>
+      <div class="alert alert-danger" *ngIf="name.touched && name.invalid">
+        <div *ngIf="name.errors.required">Su nombre es requerido.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="">Dirección</label>
+      <input #addressLine1="ngModel" name="addressLine1" [(ngModel)]="shipping.addressLine1" type="text" class="form-control" placeholder="Ej: Avda El Morro 1234" required>
+      <div class="alert alert-danger" *ngIf="addressLine1.touched && addressLine1.invalid">
+        <div *ngIf="addressLine1.errors.required">Su direccion es obligatoria.</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="">Depto o casa (opcional)</label>
+      <input #addressLine2="ngModel" name="addressLine2" [(ngModel)]="shipping.addressLine2" type="text" class="form-control" placeholder="Ej: Depto 48" required>
+
+      </div>
+
+    <div class="form-group">
+      <label for="">Ciudad</label>
+      <input #city="ngModel" name="city" [(ngModel)]="shipping.city" type="text" placeholder="Ej: Santiago"class="form-control" required>
+      <div class="alert alert-danger" *ngIf="city.touched && city.invalid">
+        <div *ngIf="city.errors.required">La ciudad de despacho es obligatoria.</div>
+      </div>
+    </div>
+    <br>
+
+    <button
+      [disabled]="!f.valid"
+      (click)="placeOrder()"
+      class="btn btn-primary btn-block">Realizar orden {{cart.totalPrice}}</button>
+  </form>

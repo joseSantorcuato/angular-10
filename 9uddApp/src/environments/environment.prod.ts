@@ -3,7 +3,7 @@ export const environment = {
   firebaseConfig: {
 
 
-     //tu firebase
+  //tu firebase
 
   }
 };

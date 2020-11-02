@@ -2,6 +2,8 @@
 
 <h1>Carro de compras</h1>
 <br>
+<div class="container">
+
 <div class="card" *ngIf="cart$ | async as cart" style="width: 100%;">
   <div class="card-body">
 
@@ -14,15 +16,14 @@ Limpiar carro</button>
     </p>
 </div>
 
-<div class="container-fluid">
 
-<table class="table" style="width: 80%;">
+<table class="table" style="width: auto%;">
   <thead>
     <tr>
-      <th scope="col">Imagen</th>
-      <th scope="col">Producto</th>
-      <th scope="col">Cantidad</th>
-      <th scope="col">Precio</th>
+      <th scope="col-3">Imagen</th>
+      <th scope="col-3">Producto</th>
+      <th scope="col-3">Cantidad</th>
+      <th scope="col-3">Precio</th>
     </tr>
   </thead>
   <tbody>
