@@ -1,6 +1,6 @@
 # Eshopudd
 
-Este proyecto está desarrollado en  [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3
+Este proyecto está desarrollado en  [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
 Para ilustrar, con fines pedagógicos, lo que podría ser un carro de compras.
 
 ## Firebase
