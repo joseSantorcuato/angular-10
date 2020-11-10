@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   firebaseConfig: {
 
-      //tu firebase
+      //tu bbdd
 
   }
 };

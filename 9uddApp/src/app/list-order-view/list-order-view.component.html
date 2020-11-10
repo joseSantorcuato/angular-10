@@ -1,0 +1,21 @@
+<div class="coantainer" *ngIf="order$ | async as orders">
+  <div class="coantainer" *ngIf="orders.length > 0; else noOrder">
+    <table class="table">
+      <thead>
+        <tr>
+          <th >Cliente</th>
+          <th>Fecha</th>
+          <th>Detalles</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{order.shipping.name}}</td>
+          <td>{{order.datePlaced | date}}</td>
+          <td><a [routerLink]="['/order-details', order.$key]">Ver detalle</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #noOrder>No hay ordenes.</ng-template>
+</div>

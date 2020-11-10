@@ -45,6 +45,8 @@ import { ProductQuantityComponent } from './product-quantity/product-quantity.co
 import { OrderService } from './order.service';
 import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-cart-summary.component';
 import { ShippingFormComponent } from './shipping-form/shipping-form.component';
+import { ListOrderViewComponent } from './list-order-view/list-order-view.component';
+import { OrderViewComponent } from './order-view/order-view.component';
 
 
 
@@ -67,7 +69,9 @@ import { ShippingFormComponent } from './shipping-form/shipping-form.component';
     ProductCardComponent,
     ProductQuantityComponent,
     ShoppingCartSummaryComponent,
-    ShippingFormComponent
+    ShippingFormComponent,
+    ListOrderViewComponent,
+    OrderViewComponent
   ],
   imports: [
     BrowserModule,
@@ -86,6 +90,7 @@ import { ShippingFormComponent } from './shipping-form/shipping-form.component';
 
       { path: 'check-out' , component: CheckOutComponent, canActivate : [AuthGuard]},
       { path: 'my/orders' , component : MyOrdersComponent, canActivate : [AuthGuard]},
+      { path: 'order-details/:id', component: OrderViewComponent, canActivate: [AuthGuard] },
       { path: 'order-success/:id' , component : OrderSuccessComponent,canActivate : [AuthGuard]},
 
 

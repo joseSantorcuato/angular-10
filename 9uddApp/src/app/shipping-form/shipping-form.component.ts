@@ -35,7 +35,7 @@ export class ShippingFormComponent implements OnInit,OnDestroy  {
 
     let total = this.cart.totalPrice;
 
-    let order = new Order(this.userId, this.shipping, this.cart);
+    let order = new Order(this.userId, this.shipping, this.cart, this.cart.totalPrice);
     let result = await this.orderService.placeOrder(order);
      //this.router.navigate(['/order-success/', result.key]);
 

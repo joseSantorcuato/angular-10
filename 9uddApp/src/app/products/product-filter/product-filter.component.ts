@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FirebaseListObservable } from 'angularfire2/database';
-import { CategoryService } from 'src/app/category.service';
+import { CategoryService } from '../../category.service';
 
 @Component({
   selector: 'product-filter',
