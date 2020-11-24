@@ -1,4 +1,4 @@
-<div class="coantainer" *ngIf="order$ | async as orders">
+<div class="container" *ngIf="order$ | async as orders">
   <div class="coantainer" *ngIf="orders.length > 0; else noOrder">
     <table class="table">
       <thead>

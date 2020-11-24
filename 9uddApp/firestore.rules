@@ -1,5 +1,6 @@
 rules_version = '2';
-//tus reglas
-    }
-  }
+service cloud.firestore {
+  match /{document=**} {
+   allow read, write; // or allow read, write: if true;
+}
 }

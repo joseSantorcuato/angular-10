@@ -16,7 +16,7 @@ export class OrderService {
   }
 
   getOrders() {
-    return this.db.list('/orders');
+    return this.db.list('/orders/');
   }
 
   getOrdersById(orderId: string) {
