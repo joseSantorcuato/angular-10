@@ -1,0 +1,52 @@
+<br>
+<div class="container">
+<h3>Listado de productos</h3>
+<br>
+
+<p>
+    <input
+        #query
+        (keyup)="filter(query.value)"
+        type="text" class="form-control" placeholder="Buscar por producto o marca">
+</p>
+
+<data-table
+    [items]="items"
+    [itemCount]="itemCount"
+    (reload)="reloadItems($event)"
+    [pagination]="false"
+>
+    <data-table-column
+        [property]="'title'"
+        [header]="'Título'"
+        [sortable]="true"
+        [resizable]="true"
+
+    ></data-table-column>
+
+    <data-table-column
+        [property]="'price'"
+        [header]="'Precio'"
+        [sortable]="true"
+        [resizable]="true"
+
+    >
+        <ng-template #dataTableCell let-item="item">
+            {{ item.price | currency:'CLP':'symbol-narrow'}}
+        </ng-template>
+    </data-table-column>
+
+    <data-table-column
+        [property]="'$key'"
+    >
+        <ng-template #dataTableCell let-item="item">
+            <a [routerLink]="['/admin/products/', item.$key]"><i class="far fa-edit"> </i>Modificar</a>
+        </ng-template>
+
+    </data-table-column>
+
+</data-table>
+<br>
+<a routerLink="/admin/products/new" class="btn btn-primary">Nuevo producto</a>
+
+</div>

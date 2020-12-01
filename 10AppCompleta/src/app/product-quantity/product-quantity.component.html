@@ -1,0 +1,10 @@
+
+
+
+<div class="def-number-input number-input safari_only">
+  <button (click)="removeFromCart()" class="minus"></button>
+  <div class="col text-center">
+     {{ shoppingCart.getQuantity(product) }}
+  </div>
+  <button   (click)="addToCart()" class="plus"></button>
+</div>
