@@ -1,0 +1,20 @@
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;
+}
+
+.btn.btn-primary{
+
+  position: absolute;
+  right: 120px;
+}
+
+.btn.btn-danger{
+
+
+
+    position: absolute;
+    right: 15px;
+
+}

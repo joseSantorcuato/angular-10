@@ -46,11 +46,15 @@
                     <div *ngIf="imageUrl.errors.url">Introduzca una URL válida</div>
                 </div>
             </div>
-            <button class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>
+            <button class="btn btn-primary"><i class="fas fa-save"></i> Guardar</button>    <div class="divider"></div>
+
             <button type="button" (click)="delete()" class="btn btn-danger"><i class="far fa-trash-alt"></i> Eliminar</button>
         </form>
+        <br>
     </div>
     <div class="col-12">
+      <br>
+      <h4>Previsualización del producto</h4>
         <product-card [product]="product"></product-card>
     </div>
 </div>
